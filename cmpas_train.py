@@ -576,7 +576,7 @@ def build_loss(config):
 
 RUN_CONFIG = dict(data_file='cmpas.h5', checkpoint_dir='checkpoints_cmpas',
     input_length=12, output_length=6, batch_size=8, learning_rate=1e-4,
-    weight_decay=1e-4, num_epochs=50, early_stopping_patience=12, num_workers=0,
+    weight_decay=1e-4, num_epochs=50, early_stopping_patience=8, num_workers=0,
     pin_memory=True, clip_min=0., clip_max=28., metric_thresholds=[.1,1.,5.,10.,20.,30.],
     validation_ratio=.1, validation_year=None, test_year=None, temporal_gap_frames=18,
     seed=42, deterministic=True, mcrp_patch_size=8, mcrp_base_weight=.1,
