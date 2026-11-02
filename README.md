@@ -2,6 +2,8 @@
 
 Standalone PyTorch implementation for CMPAS and MeteoNet precipitation forecasting.
 
+The training scripts read preprocessed MeteoNet HDF5 sequences; spatial cropping, quality control, missing-value treatment, and sequence construction are performed upstream as described in the manuscript.
+
 ## Files
 
 - `model.py`: all model components and the complete HM-SimVP architecture.
