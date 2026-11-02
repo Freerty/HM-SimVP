@@ -88,6 +88,3 @@ Common training options: `--epochs`, `--batch-size`, `--workers`, `--output`, `-
 Common testing options: `--batch-size`, `--workers`, `--output`.
 Use `python <script>.py --help` for details. Only load checkpoints from trusted sources.
 
-## Validation scope
-
-The consolidated model was checked against the original implementation at 121×121 and 128×128, with identical outputs for identical weights and inputs. Small synthetic-data checks cover training, checkpoint saving/loading and evaluation. Full dataset retraining has not been performed for this standalone release.
